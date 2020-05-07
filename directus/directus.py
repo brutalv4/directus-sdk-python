@@ -186,7 +186,7 @@ class DirectusClient:
             "offset": offset,
             "sort": ",".join(sort),
             "single": single,
-            "filter": filter,
+            **filter,
             "status": status,
             "q": q,
         }
@@ -350,7 +350,7 @@ class DirectusClient:
             "offset": offset,
             "sort": ",".join(sort),
             "single": single,
-            "filter": filter,
+            **filter,
             "q": q,
         }
 
@@ -442,7 +442,7 @@ class DirectusClient:
             "offset": offset,
             "sort": ",".join(sort),
             "single": single,
-            "filter": filter,
+            **filter,
             "status": status,
             "q": q,
         }
